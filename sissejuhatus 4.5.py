@@ -43,6 +43,10 @@ while not gameover:
     for i in range(len(coords)):
         pygame.draw.rect(screen, red, [coords[i][0], coords[i][1], 20, 20])
 
+    for i in range(len(coords)):
+        pygame.draw.rect(screen, red, [coords[i][0], coords[i][1], 20,20])
+        coords[i][1] +=  1
+
     pygame.display.flip()
     screen.fill(lBlue)
 pygame.quit()
