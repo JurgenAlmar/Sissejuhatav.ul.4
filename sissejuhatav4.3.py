@@ -29,7 +29,7 @@ ball = pygame.image.load("ball.png")
 # kiirus ja asukoht
 posX, posY = 0, 0
 speedX = 3
-
+speedY = 4
 
 gameover = False
 while not gameover:
@@ -47,6 +47,7 @@ while not gameover:
 
 
    posX += speedX
+   posY += speedY
 
 
    # graafika kuvamine ekraanil
